@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,10 +24,94 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@font-face {
+  font-family: "pnu-bold";
+  src: url("/fonts/ArbFONTS-PNU-Bold.ttf");
 }
+
+@font-face {
+  font-family: "pnu-medium";
+  src: url("/fonts/ArbFONTS-PNU-Medium.ttf");
+}
+@font-face {
+  font-family: "pnu-regular";
+  src: url("/fonts/ArbFONTS-PNU-Regular.ttf");
+}
+
+@font-face {
+  font-family: "pnu-light";
+  src: url("/fonts/ArbFONTS-PNU-Light.ttf");
+}
+
+.font-pnu-light {
+  font-family: "pnu-light";
+}
+
+.font-pnu-medium {
+  font-family: "pnu-medium";
+}
+
+.font-pnu-regular {
+  font-family: "pnu-regular";
+}
+
+.font-pnu-bold {
+  font-family: "pnu-bold";
+}
+
+/* custom classes */
+.card-box {
+  position: relative;
+
+  background-color: transparent;
+  border-radius: 10px;
+
+  /* Top border solid green */
+  border-top: 5px solid #876514;
+
+  /* Ensure border-radius works */
+  overflow: hidden;
+
+  /* Use background to simulate the gradient borders */
+  background: linear-gradient(to bottom, #876514, transparent) left/5px 100%
+      no-repeat,
+    linear-gradient(to bottom, #876514, transparent) right/5px 100% no-repeat;
+}
+
+/* .card-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom #8e6e21, transparent);
+  opacity: 0.6;
+  z-index: -1;
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.swiper .swiper-slide {
+  @apply w-[307px] lg:w-[540px];
+}
+.swiper-button-next::after {
+  content: "" !important;
+  /* color: #FFF; */
+}
+.swiper-button-prev::after {
+  content: "" !important;
+  /* color: #FFF; */
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 1 !important;
+  cursor: pointer !important;
+  pointer-events: all !important;
 }
