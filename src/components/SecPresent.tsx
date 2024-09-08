@@ -7,7 +7,7 @@ import wsWeb from "../../public/assets/ws-web.png";
 
 const SecPresent = () => {
   return (
-    <div className="min-h-screen bg-[#201804] px-[16px] py-[48px] lg:py-[48px] lg:px-[96px] mx-auto">
+    <div className="min-h-screen bg-gradient-to-bl from-[#2d2514] to-[#1a160f] px-[16px] py-[48px] lg:py-[48px] lg:px-[96px] mx-auto">
       <div className=" w-full flex flex-wrap lg:flex-nowrap lg:flex-row-reverse  gap-10 items-center justify-center mb-12">
         <Image
           src={daMob}
@@ -24,7 +24,7 @@ const SecPresent = () => {
           height={751}
         />
         <div>
-          <h2 className="text-white font-[pnu-regular] mb-10 text-[40px] lg:text-[48px]">
+          <h2 className="text-white font-[pnu-bold] mb-10 text-[40px] lg:text-[48px]">
             د.أحمد الدملاوي
           </h2>
           <p className="text-white font-[pnu-regular] text-[20px] py-4">
@@ -68,7 +68,7 @@ const SecPresent = () => {
           height={500}
         />
         <div>
-          <h2 className=" self-stretch mb-10 text-white text-right font-[pnu-regular] text-[40px] lg:text-5xl font-bold leading-[140%]">
+          <h2 className=" self-stretch mb-10 text-white text-right font-[700] font-[pnu-bold] text-[40px] md:[48px] lg:text-5xl  leading-[140%]">
             Will steel
           </h2>
           <p className="text-white font-[pnu-regular] text-[20px] py-4">

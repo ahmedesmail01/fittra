@@ -36,8 +36,8 @@ const Hero = () => {
         </p>
         <Image src={logoWeb} alt="logo web" className="hidden md:block" />
         <Image src={logoMob} alt="logo mob" className="md:hidden" />
-        <button className="w-[195px] h-[60px] rounded-lg text-white font-[pnu-medium] bg-gradient-to-r from-custom_green to-custom_yellow">
-          اشترك الان
+        <button className="w-[162px] md:w-[195px] h-[50px] md:h-[60px] px-[18px] py-[10px] rounded-2xl text-[15px] md:text-[18px] text-white font-[pnu-medium] bg-gradient-to-r from-custom_green to-custom_yellow">
+          اشترك الآن
         </button>
       </div>
     </div>

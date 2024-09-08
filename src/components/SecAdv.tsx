@@ -5,19 +5,13 @@ import backImgMob from "../../public/assets/Group 1321314440.png";
 
 const SecAdv = () => {
   return (
-    <div className="relative min-h-screen bg-black pt-10 pb-44">
-      <h2 className="z-20 absolute top-[3%] md:top-[8%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 self-stretch text-white text-center font-[pnu-regular] text-[32px] md:text-[40px] font-bold leading-[160%]">
+    <div className="relative min-h-screen bg-black pt-10 pb-40">
+      <h2 className="z-20 absolute top-[3%] md:top-[8%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 self-stretch text-white text-center font-[pnu-regular] text-[32px]  md:text-[40px] font-bold leading-[160%]">
         مميزات البرنامج
       </h2>
       <div className="absolute z-10 w-full h-full top-0 left-0 hidden sm:block bg-gradient-to-b from-black to-transparent "></div>
       <div className="absolute z-10 w-full h-full bottom-0 left-0 bg-gradient-to-t  from-[#1a1304] to-transparent "></div>
-      {/*  <Image
-        src={backImgMob}
-        alt="background image"
-        layout="fill"
-        objectFit="contain"
-        className="sm:hidden w-full"
-      /> */}
+
       <Image
         src={backImgMob}
         alt="image back mobile"
@@ -31,21 +25,21 @@ const SecAdv = () => {
         className="hidden sm:block"
       />
 
-      <div className="flex flex-wrap z-20 justify-center mb-10 md:mb-40  items-center pt-28 gap-[32px] px-4 lg:px-[96px]">
+      <div className="flex flex-wrap z-20 justify-center mb-10 md:mb-[96px]  items-center pt-28 gap-[32px] px-4 lg:px-[96px]">
         {data.map((item) => (
           <div
             key={item.id}
-            className="card-box z-30 flex flex-col rounded-lg max-w-full font-[pnu-regular] w-[253.5px] h-[204px] justify-center  items-center gap-[32px] pt-6 pb-10 px-2 bg-gradient-to-b from-black to-transparent "
+            className="card-box px-[8px] pt-[24px] pb-[40px] z-30 flex flex-col rounded-lg max-w-full font-[pnu-regular] w-[253.5px] h-[204px] justify-center  items-center   bg-gradient-to-b from-black to-transparent "
           >
-            <h3 className="text-[32xpx] text-center font-[pnu-regular] text-white">
+            <h3 className="text-[20px] text-center font-[pnu-regular] font-[700] text-white ">
               {item.title}
             </h3>
-            <p className="flex flex-wrap justify-center flex-[1_0_0] self-stretch text-white text-center font-[pnu-light] text-base font-normal leading-[normal]">
+            <p className="flex flex-wrap justify-center flex-[1_0_0] self-stretch text-white text-center font-[pnu-light]  font-normal leading-[normal]">
               {item.description}
             </p>
           </div>
         ))}
-        <h2 className="absolute bottom-10 z-30 text-white text-[32px] md:text-[40px]  font-[pnu-regular] text-center">
+        <h2 className="absolute bottom-10 z-30 text-white font-[700]  text-[32px] md:text-[40px]  font-[pnu-regular] text-center">
           هذا البرنامج يقدمه
         </h2>
       </div>

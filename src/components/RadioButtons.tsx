@@ -62,8 +62,8 @@ export default function RadioButtons({ setSelect }: { setSelect: any }) {
         }}
         value="cash"
       >
-        <div className="w-full bg-transparent flex items-center justify-between">
-          <h2 className="flex font-[pnu-bold] text-white  flex-col justify-center flex-[1_0_0] self-stretch  text-right font-expo-medium lg:font-expo-bold text-base lg:text-2xl font-medium leading-[160%]">
+        <div className="w-full bg-transparent flex items-center justify-between  ">
+          <h2 className="flex font-[pnu-bold]  text-white  flex-col justify-center flex-[1_0_0] self-stretch   text-right font-expo-medium lg:font-expo-bold text-base lg:text-2xl font-medium leading-[160%]">
             للدفع كاش
           </h2>
         </div>
