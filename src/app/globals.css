@@ -28,21 +28,21 @@ body {
 
 @font-face {
   font-family: "pnu-bold";
-  src: url("/fonts/ArbFONTS-PNU-Bold.ttf");
+  src: url("/living-fittra/fonts/ArbFONTS-PNU-Bold.ttf");
 }
 
 @font-face {
   font-family: "pnu-medium";
-  src: url("/fonts/ArbFONTS-PNU-Medium.ttf");
+  src: url("/living-fittra/fonts/ArbFONTS-PNU-Medium.ttf");
 }
 @font-face {
   font-family: "pnu-regular";
-  src: url("/fonts/ArbFONTS-PNU-Regular.ttf");
+  src: url("/living-fittra/fonts/ArbFONTS-PNU-Regular.ttf");
 }
 
 @font-face {
   font-family: "pnu-light";
-  src: url("/fonts/ArbFONTS-PNU-Light.ttf");
+  src: url("/living-fittra/fonts/ArbFONTS-PNU-Light.ttf");
 }
 
 .font-pnu-light {
@@ -114,4 +114,10 @@ body {
   opacity: 1 !important;
   cursor: pointer !important;
   pointer-events: all !important;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
 }

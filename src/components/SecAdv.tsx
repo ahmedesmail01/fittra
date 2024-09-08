@@ -10,7 +10,7 @@ const SecAdv = () => {
         مميزات البرنامج
       </h2>
       <div className="absolute z-10 w-full h-full top-0 left-0 hidden sm:block bg-gradient-to-b from-black to-transparent "></div>
-      <div className="absolute z-10 w-full h-full bottom-0 left-0 bg-gradient-to-t  from-[#1a1304] to-transparent "></div>
+      <div className="absolute z-10 w-full h-full bottom-0 left-0 bg-gradient-to-t  from-[#1a1304] to-transparent bg-[#000000db]"></div>
 
       <Image
         src={backImgMob}

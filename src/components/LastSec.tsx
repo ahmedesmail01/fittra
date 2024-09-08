@@ -4,8 +4,8 @@ import RadioButtons from "./RadioButtons";
 import { Button } from "@nextui-org/react";
 import { redirect, useRouter } from "next/navigation";
 import Image from "next/image";
-import imgWeb from "../../public/assets/Rectangle 790.png";
-import imgMob from "../../public/assets/Rectangle 790 mob.png";
+// import imgWeb from "../../public/assets/Rectangle 790.png";
+// import imgMob from "../../public/assets/Rectangle 790 mob.png";
 
 const Subscribe = () => {
   return (
@@ -19,19 +19,18 @@ const Subscribe = () => {
         </div>
         <div className="w-full basis-fit pt-[24px] lg:basis-[572px]">
           <Image
-            src={imgMob}
+            src={"/living-fittra/assets/cover.jpg"}
             alt=""
             width={572}
             height={672}
-            className="max-w-full w-full lg:hidden"
+            className="max-w-full w-full lg:hidden rounded-xl"
           />
           <Image
-            src={imgWeb}
+            src={"/living-fittra/assets/cover.jpg"}
             alt=""
             width={572}
             height={672}
-            className="hidden lg:block 
-          "
+            className="hidden lg:block rounded-xl"
           />
         </div>
       </div>
@@ -40,30 +39,6 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
-
-/* const Advantages1 = [
-  {
-    id: 1,
-    main: "سجل واحصل على مكافآت بقيمة 2400$ عند اشتراكك اليوم",
-  },
-  {
-    id: 2,
-    main: "12 حلقة من برنامج الرجل الكسيب للذكور بقيمة: 400 دولار",
-  },
-  { id: 3, main: "12 حلقة من برنامج القيم بقيمة: 100 دولار" },
-  {
-    id: 4,
-    main: "متابعة يومية مع مرشد علاجي بقيمة: 300 دولار",
-  },
-  {
-    id: 5,
-    main: "جلسة متابعة مع المرشد العلاجي أسبوعيا بقيمة: 1200 دولار",
-  },
-  {
-    id: 6,
-    main: "العدد محدود سارع بالحجز  ",
-  },
-]; */
 
 const RightBox = () => {
   const [select, setSelect] = useState("");
@@ -104,13 +79,13 @@ const RightBox = () => {
         <Button
           isDisabled={!select}
           onPress={() => {
-            // if (select === "cash") {
-            //   router.push("https://buy.stripe.com/28o3cs77kcIS0QU6oV");
-            // } else if (select === "installment") {
-            //   router.push(
-            //     "https://mtnhealingcenter.com/diabetes/installment-form/"
-            //   );
-            // }
+            if (select === "cash") {
+              router.push("https://efficaciousleadership.com/forms/fitraLife/");
+            } else if (select === "installment") {
+              router.push(
+                "https://efficaciousleadership.com/living-fittra/installment/"
+              );
+            }
 
             if (select == "cash") {
               if (typeof window !== "undefined" && window.dataLayer) {
@@ -118,16 +93,16 @@ const RightBox = () => {
                   event: "cash-click",
                 });
               }
-              router.push("#");
+              // router.push("#");
             } else {
               if (typeof window !== "undefined" && window.dataLayer) {
                 window.dataLayer.push({
                   event: "installment-click",
                 });
               }
-              setTimeout(() => {
-                router.push("#");
-              }, 2000);
+              // setTimeout(() => {
+              //   router.push("#");
+              // }, 2000);
             }
           }}
           className="flex h-[72px] py-[24px] font-[pnu-bold] text-[#ffffff] text-[24px] lg:text-[32px] justify-center items-center gap-1 self-stretch [background:linear-gradient(95deg,#179963_26.98%,#FEBD21_118%)] px-4 rounded-[20px]"

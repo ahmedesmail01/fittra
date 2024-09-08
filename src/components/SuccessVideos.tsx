@@ -94,10 +94,10 @@ const VideosSlider = (props: Props) => {
           return (
             <SwiperSlide key={index} className={`slide_${index + 1}`}>
               <div className="w-full flex  h-full flex-col items- relative justify-center">
-                <h2 className="mb-8 font-[pnu-regular] text-white text-lg lg:text-2xl ">
+                {/* <h2 className="mb-8 font-[pnu-regular] text-white text-lg lg:text-2xl ">
                   {el.title}
-                </h2>
-                <Stream
+                </h2> */}
+                {/* <Stream
                   src={el.link}
                   // key={el.link}
                   controls={true}
@@ -107,7 +107,8 @@ const VideosSlider = (props: Props) => {
                   // className="disabled"
                   width="100%"
                   height="100%"
-                />
+                /> */}
+                <div className="w-full h-[90%] bg-white"></div>
               </div>
             </SwiperSlide>
           );
@@ -116,7 +117,7 @@ const VideosSlider = (props: Props) => {
       <div className="flex w-full relative mb-2 mt-4 h-8 justify-center gap-4 items-center">
         <div className="swiper-button-next !w-14 !static">
           <Image
-            src={`${"/assets/arrow-right.svg"}`}
+            src={`${"/living-fittra/assets/arrow-right.svg"}`}
             width={40}
             height={40}
             alt=""
@@ -124,7 +125,7 @@ const VideosSlider = (props: Props) => {
         </div>
         <div className="swiper-button-prev !w-14 !static">
           <Image
-            src={`${"/assets/arrow-left.svg"}`}
+            src={`${"/living-fittra/assets/arrow-left.svg"}`}
             width={40}
             height={40}
             alt=""
